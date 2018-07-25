@@ -17,8 +17,6 @@ from .permissions import IsOwner
 from rest_framework.filters import OrderingFilter, SearchFilter
 
 
-#Complete ME!
-class LoginView():
 
 
 class RegisterView(CreateAPIView):
@@ -61,3 +59,4 @@ class RestaurantDeleteView(DestroyAPIView):
     lookup_field = 'id'
     lookup_url_kwarg = 'restaurant_id'
     permission_classes = [IsAuthenticated,IsAdminUser]
+
